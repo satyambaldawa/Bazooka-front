@@ -4,7 +4,7 @@ nav{
   width: 100%;
   z-index:2;
   position: relative;
-  top: -18px;
+  /*top: -18px;*/
 }
 label.logo{
   color: white;
