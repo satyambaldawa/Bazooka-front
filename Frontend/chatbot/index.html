@@ -31,12 +31,27 @@
         <p class='chatbot__message'>Hi there 🖐. I’m Bot, your virtual assistant. I'm here to help with your general enquiries.<br>How are you feeling today?</p>
       </li>
       <!-- Answer and response added here -->
+      <li class='is-user animation'>
+        <p class='chatbot__message'id="my_speech">
+          
+        </p>
+        <span class='chatbot__arrow chatbot__arrow--right'></span>
+      </li>
+      <li class='is-ai animation' id='${isLoading ? "is-loading" : ""}'>
+        <div class="is-ai__profile-picture" ">
+          <svg class="icon-avatar" viewBox="0 0 32 32">
+            <use xlink:href="#avatar" />
+          </svg>
+        </div>
+        <span class='chatbot__arrow chatbot__arrow--left'></span>
+        <div class='chatbot__message'id="diagnosis" ></div>
+      </li>
     </ul>
   </div>
   <div class="chatbot__entry chatbot--closed">
     <input type="text" class="chatbot__input" placeholder="Write a message or Tap on mic..." />
-      <input type="image" class="mic chatbot__submit" name=" " src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/Circle-icons-mic.svg/1200px-Circle-icons-mic.svg.png" alt="text"> 
-    
+      <input type="image" id="start-btn" class="mic chatbot__submit" name=" " src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/Circle-icons-mic.svg/1200px-Circle-icons-mic.svg.png" alt="text"> 
+
   </div>
 </div>
 
