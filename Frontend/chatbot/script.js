@@ -7,7 +7,7 @@ let my_speech = document.querySelector("#my_speech");
 typhoid = ["fever", "headache", "diarrhoea"];
 maleria = ["fever", "shivering", "headache", "vomiting", "muscle"];
 chickenpox = ["fever", "appetite", "headache", "tiredness"];
-common_cold = ["cough", "congestion", "sneezing", "unwell"];
+common_cold = ["sore", "cough", "congestion", "sneezing"];
 dengue = ["muscle", "headache", "nausea", "vomiting", "Rash", "fever"];
 
 const recognition = new webkitSpeechRecognition();
@@ -59,7 +59,7 @@ recognition.onresult = (e) => {
     });
   }
 
-  if (cnt4 === chickenpox.length) diagnosis.innerHTML = "You have chikenpox";
+  if (cnt3 === chickenpox.length) diagnosis.innerHTML = "You have chikenpox";
   else {
     myArr.forEach((e1) => {
       common_cold.forEach((element) => {
@@ -70,7 +70,7 @@ recognition.onresult = (e) => {
     });
   }
 
-  if (cnt5 === common_cold.length) diagnosis.innerHTML = "You have common cold";
+  if (cnt4 === common_cold.length) diagnosis.innerHTML = "You have common cold";
   else {
     myArr.forEach((e1) => {
       dengue.forEach((element) => {
