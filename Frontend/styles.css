@@ -10,6 +10,7 @@ html,body{
   height: 100%;
   width: 100%;
   place-items: center;
+  /* background: -webkit-linear-gradient(left, #a445b2, #fa4299); */
   background: -webkit-linear-gradient(left, #4166f5, #00ffff);
 }
 ::selection{
@@ -105,9 +106,9 @@ input[type="radio"]{
   transition: all 0.6s cubic-bezier(0.68,-0.55,0.265,1.55);
 }
 .form-inner form .field{
-  height: 50px;
+  height: 40px;
   width: 100%;
-  margin-top: 20px;
+  margin-top: 15px;
 }
 .form-inner form .field input{
   height: 100%;
