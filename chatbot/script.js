@@ -82,8 +82,8 @@ recognition.onresult = (e) => {
   }
 
   if (cnt5 === dengue.length) diagnosis.innerHTML = "You might have Dengue";
-  else{
-    diagnosis.innerHTML = "Sorry No Diagnosis found"
-  }
+//   else{
+//     diagnosis.innerHTML = "Sorry No Diagnosis found"
+//   }
   my_speech.innerHTML = transcript;
 };
