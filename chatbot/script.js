@@ -37,7 +37,7 @@ recognition.onresult = (e) => {
     });
   });
 
-  if (cnt === typhoid.length) diagnosis.innerHTML = "You have Typhoid";
+  if (cnt === typhoid.length) diagnosis.innerHTML = "You might have Typhoid";
   else {
     myArr.forEach((e1) => {
       maleria.forEach((element) => {
@@ -48,7 +48,7 @@ recognition.onresult = (e) => {
     });
   }
 
-  if (cnt2 === maleria.length) diagnosis.innerHTML = "You have maleria";
+  if (cnt2 === maleria.length) diagnosis.innerHTML = "You might have maleria";
   else {
     myArr.forEach((e1) => {
       chickenpox.forEach((element) => {
@@ -59,7 +59,7 @@ recognition.onresult = (e) => {
     });
   }
 
-  if (cnt3 === chickenpox.length) diagnosis.innerHTML = "You have chikenpox";
+  if (cnt3 === chickenpox.length) diagnosis.innerHTML = "You might have chikenpox";
   else {
     myArr.forEach((e1) => {
       common_cold.forEach((element) => {
@@ -70,7 +70,7 @@ recognition.onresult = (e) => {
     });
   }
 
-  if (cnt4 === common_cold.length) diagnosis.innerHTML = "You have common cold";
+  if (cnt4 === common_cold.length) diagnosis.innerHTML = "You might have common cold";
   else {
     myArr.forEach((e1) => {
       dengue.forEach((element) => {
@@ -81,7 +81,7 @@ recognition.onresult = (e) => {
     });
   }
 
-  if (cnt5 === dengue.length) diagnosis.innerHTML = "You have Dengue";
+  if (cnt5 === dengue.length) diagnosis.innerHTML = "You might have Dengue";
 
   my_speech.innerHTML = transcript;
 };
