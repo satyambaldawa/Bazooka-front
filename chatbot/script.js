@@ -8,7 +8,7 @@ typhoid = ["fever", "headache", "diarrhoea"];
 maleria = ["fever", "shivering", "headache", "vomiting", "muscle"];
 chickenpox = ["fever", "appetite", "headache", "tiredness"];
 common_cold = ["sore", "cough", "congestion", "sneezing"];
-dengue = ["muscle", "headache", "nausea", "vomiting", "Rash", "fever"];
+dengue = ["muscle", "headache", "nausea", "vomiting", "rash", "fever"];
 
 const recognition = new webkitSpeechRecognition();
 recognition.continous = true;
@@ -82,6 +82,8 @@ recognition.onresult = (e) => {
   }
 
   if (cnt5 === dengue.length) diagnosis.innerHTML = "You might have Dengue";
-
+  else{
+    diagnosis.innerHTML = "Sorry No Diagnosis found"
+  }
   my_speech.innerHTML = transcript;
 };
